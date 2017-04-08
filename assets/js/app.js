@@ -22,7 +22,7 @@ window.addEventListener("scroll", function() {
     }
     lastScrollTop = currentScroll;
 }, false);
-var nombres=['Fiorella Quispe','Lourdes Vilchez','Rosmery Maldonado','Yessenia Huamán',
+var nombres = ['Fiorella Quispe', 'Lourdes Vilchez', 'Rosmery Maldonado', 'Yessenia Huamán',
     'Miriam Mendoza', 'Elizabeth Condori', 'Arantza Burga', 'Grecia Rayme',
     'Janine Vega', 'Rosario Félix', 'Daguiana Revolledo', 'Jenny Velasquez',
     'Nadia Cuadros', 'Michelle More', 'Marilu Llamoca', 'Mariel García',
@@ -34,8 +34,9 @@ var nombres=['Fiorella Quispe','Lourdes Vilchez','Rosmery Maldonado','Yessenia H
     'Angie Condor', 'Maricarmen Rojas', 'Ariana Cabana', 'Flor Condori',
     'Mitchell Rodríguez', 'Naomi Villanueva', 'Mary Castillo', 'Miriam Peralta',
     'Karin Alejo', 'Liliana Peña', 'Ruth Salvador', 'Marilu Llamoca', 'Wendy Reyes',
-    'Cinthya Quispe','Maria Grecia Cutipa', 'Ana Durand', 'Glisse Jorge', 'Neiza Nuñez',
-    'Sandra Solorzano'];
+    'Cinthya Quispe', 'Maria Grecia Cutipa', 'Ana Durand', 'Glisse Jorge', 'Neiza Nuñez',
+    'Sandra Solorzano'
+];
 for (var i = 1; i < 54; i++) {
     var lista = document.createElement("li");
     lista.setAttribute("class", "box");
@@ -46,13 +47,11 @@ for (var i = 1; i < 54; i++) {
     image.setAttribute("class", "img-box");
     image.setAttribute("src", "assets/img/students/" + i + ".png");
     image.setAttribute("alt", nombres[i]);
-    var nombre=document.createElement("span");
-    nombre.setAttribute("class","text");
-    nombre.innerHTML=nombres[i-1];
-
+    var nombre = document.createElement("span");
+    nombre.setAttribute("class", "text");
+    nombre.innerHTML = nombres[i - 1];
     figura.appendChild(image);
-      figura.appendChild(nombre);
-
+    figura.appendChild(nombre);
     divBox.appendChild(figura);
     lista.appendChild(divBox);
     document.getElementById("contenedor").appendChild(lista);
